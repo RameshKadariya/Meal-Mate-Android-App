@@ -87,7 +87,6 @@ The application addresses common challenges in meal preparation by providing too
 
 ## 📱 Screenshots
 
-> **Note**: Add screenshots of your app here to showcase the UI and features. Recommended sections:
 > - Splash Screen & Login
 > - Recipe Browser & Details
 > - Meal Planner Calendar
