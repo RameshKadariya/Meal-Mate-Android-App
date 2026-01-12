@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2196F3</color>
+    <color name="colorPrimaryDark">#1976D2</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    
+    <!-- Professional Food Theme Colors -->
+    <color name="primary">#2A9D8F</color>          <!-- Teal -->
+    <color name="primary_dark">#264653</color>     <!-- Dark Blue -->
+    <color name="secondary">#E9C46A</color>        <!-- Gold -->
+    <color name="accent">#F4A261</color>           <!-- Peach -->
+    <color name="error">#E76F51</color>            <!-- Coral -->
+    
+    <!-- Background and Text Colors -->
+    <color name="background">#FFFFFF</color>
+    <color name="background_light">#F5F7FA</color> <!-- Light background for alternating sections -->
+    <color name="surface">#F8F9FA</color>
+    <color name="text_primary">#2D3436</color>
+    <color name="text_secondary">#636E72</color>
+    <color name="divider">#E9ECEF</color>
+    
+    <!-- Input Fields -->
+    <color name="input_background">#F1F3F5</color>
+    <color name="input_stroke">#DEE2E6</color>
+    
+    <!-- Google Sign In colors -->
+    <color name="google_blue">#4285F4</color>
+    <color name="google_gray">#747775</color>
+    
+    <!-- Enhanced Design Colors -->
+    <color name="background_color">#F5F5F5</color>
+    <color name="rating_color">#FFC107</color>
+    
+    <!-- Instruction Background -->
+    <color name="instruction_background">#E8F5E9</color>  <!-- Light green background -->
+</resources>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center"
+    android:background="#F9F9F9">
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@android:drawable/ic_dialog_alert"
+        android:tint="#E53935"
+        android:layout_marginBottom="24dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Google Maps Error"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#333333"
+        android:gravity="center"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:id="@+id/errorText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="The Google Maps API key is not properly configured. Please follow these steps to fix it:"
+        android:textSize="16sp"
+        android:textColor="#555555"
+        android:gravity="center"
+        android:layout_marginBottom="24dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1. Go to Google Developer Console\n2. Select your project\n3. Go to APIs &amp; Services > Credentials\n4. Edit your API key\n5. Add package name: com.raka.mealmate\n6. Add SHA-1 fingerprint: 2B:A8:B7:F8:72:D2:71:58:CF:C0:A8:EE:46:5B:5F:42:40:2A:E8:86\n7. Enable Maps SDK for Android in the API Library section"
+        android:textSize="14sp"
+        android:textColor="#666666"
+        android:layout_marginBottom="24dp"
+        android:lineSpacingExtra="4dp"/>
+
+    <Button
+        android:id="@+id/btnDeveloperConsole"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Open Google Developer Console"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/btnDemoMode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Continue with Demo Mode"
+        android:layout_marginBottom="16dp"/>
+
+</LinearLayout>

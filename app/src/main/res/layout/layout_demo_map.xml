@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#EEF7FA">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Demo Mode: Map Simulation"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="The real map cannot be displayed because the Google Maps API key needs to be properly configured. Sample stores have been created in the database."
+        android:textSize="16sp"
+        android:layout_marginBottom="16dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/storeListRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#FFFFFF"
+        android:padding="8dp"/>
+
+    <Button
+        android:id="@+id/btnAddNewStore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add New Store"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/btnConfigureApiKey"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Configure API Key"
+        android:layout_marginTop="8dp"/>
+
+</LinearLayout>

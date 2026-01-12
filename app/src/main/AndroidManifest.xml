@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/ic_food_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_food_logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MealMate"
+        tools:targetApi="31">
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <!-- Google Maps API Key -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="${MAPS_API_KEY}" />
+
+        <activity
+            android:name=".SplashScreen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RecipeBrowserActivity"
+            android:exported="false"
+            android:label="Recipe Browser"
+            android:theme="@style/Theme.MealMate">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".RecipeDetailActivity"
+            android:exported="false"
+            android:label="Recipe Details"
+            android:theme="@style/Theme.MealMate">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".ShoppingListActivity"
+            android:exported="false"
+            android:label="Shopping List"
+            android:theme="@style/Theme.MealMate">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".MealPlannerActivity"
+            android:exported="false"
+            android:label="Meal Planner"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".AddRecipeActivity"
+            android:exported="false"
+            android:label="Add Recipe"
+            android:parentActivityName=".RecipeBrowserActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".RecipeBrowserActivity" />
+        </activity>
+        <activity
+            android:name=".StoresMapActivity"
+            android:exported="false"
+            android:label="Grocery Stores"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".AddEditStoreActivity"
+            android:exported="false"
+            android:label="Add/Edit Store"
+            android:parentActivityName=".StoresMapActivity" />
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="false"
+            android:label="My Profile"
+            android:parentActivityName=".MainActivity" /> <!-- Broadcast Receiver for Meal Prep Notifications -->
+        <receiver
+            android:name=".receivers.MealPrepReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="com.raka.mealmate.ACTION_MEAL_PREP_REMINDER" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

@@ -1,0 +1,70 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.MealMate" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="colorSecondary">@color/secondary</item>
+        <item name="colorAccent">@color/accent</item>
+        <item name="android:windowBackground">@color/background</item>
+        
+        <!-- Custom text appearances -->
+        <item name="textAppearanceHeadlineLarge">@style/TextAppearance.MealMate.HeadlineLarge</item>
+        <item name="textAppearanceBodyLarge">@style/TextAppearance.MealMate.BodyLarge</item>
+        
+        <!-- Custom button style -->
+        <item name="materialButtonStyle">@style/Widget.MealMate.Button</item>
+        <item name="textInputStyle">@style/Widget.MealMate.TextInputLayout.Filled</item>
+    </style>
+
+    <style name="Widget.MealMate.Button" parent="Widget.MaterialComponents.Button">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:letterSpacing">0.01</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="cornerRadius">12dp</item>
+        <item name="elevation">0dp</item>
+        <item name="rippleColor">@color/primary_dark</item>
+        <item name="backgroundTint">@color/primary</item>
+    </style>
+
+    <style name="Widget.MealMate.Button.OutlinedButton" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:letterSpacing">0.01</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="cornerRadius">12dp</item>
+        <item name="strokeColor">@color/input_stroke</item>
+        <item name="strokeWidth">1dp</item>
+        <item name="rippleColor">@color/input_background</item>
+        <item name="backgroundTint">@color/white</item>
+    </style>
+
+    <style name="Widget.MealMate.TextInputLayout.Filled" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
+        <item name="boxBackgroundColor">@color/input_background</item>
+        <item name="boxStrokeColor">@color/primary</item>
+        <item name="boxStrokeWidth">0dp</item>
+        <item name="boxStrokeWidthFocused">1dp</item>
+        <item name="hintTextColor">@color/primary</item>
+        <item name="android:textColorHint">@color/text_secondary</item>
+        <item name="cornerRadius">12dp</item>
+    </style>
+
+    <!-- Custom text appearances -->
+    <style name="TextAppearance.MealMate.HeadlineLarge" parent="TextAppearance.MaterialComponents.Headline5">
+        <item name="fontFamily">sans-serif-medium</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textSize">32sp</item>
+        <item name="android:letterSpacing">-0.01</item>
+    </style>
+
+    <style name="TextAppearance.MealMate.BodyLarge" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="fontFamily">sans-serif</item>
+        <item name="android:textColor">@color/text_secondary</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:letterSpacing">0</item>
+    </style>
+
+    <style name="Theme.MealMate" parent="Base.Theme.MealMate" />
+</resources>
